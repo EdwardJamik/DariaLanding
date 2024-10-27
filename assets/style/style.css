@@ -1026,6 +1026,7 @@ main {
   transform: translate(-50%, -50%);
 }
 .tarifs .container .tarif .price > div > span.default_price {
+  position: relative;
   font-family: "HelveticaNeueCyr";
   font-size: 36px;
   font-weight: 600;
@@ -1033,6 +1034,7 @@ main {
   text-align: left;
   color: #121212;
   padding-right: 14px;
+  z-index: 3;
 }
 .tarifs .container .tarif .price > div > span.default_price b {
   font-weight: 600;
@@ -1045,6 +1047,7 @@ main {
   padding: 0 24px 32px;
 }
 .tarifs .container .tarif .triggers .default_button {
+  position: relative;
   margin-top: 16px;
   font-family: HelveticaNeueCyr;
   font-size: 12px;
@@ -1052,6 +1055,7 @@ main {
   line-height: 15.84px;
   text-align: center;
   color: #121212;
+  z-index: 3;
 }
 .tarifs .container .tarif.standart ul li.not {
   opacity: 0.5;
@@ -1412,7 +1416,7 @@ main {
 }
 .question .container .content ul li p {
   font-family: HelveticaNeueCyr;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 14.4px;
   text-align: left;
