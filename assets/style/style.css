@@ -303,7 +303,7 @@ main {
   justify-content: space-evenly;
 }
 .top_labels > div {
-  width: 164px;
+  width: 168px;
   height: 64px;
   border-width: 1px;
   border-top: 0;
@@ -878,7 +878,7 @@ main {
   line-height: 21.6px;
   text-align: left;
   color: #121212;
-  margin-top: 24px;
+  margin: 24px 0 0;
 }
 .slider .container > .content .slider_container .day_slider .item .content p {
   margin-top: 8px;
@@ -1052,6 +1052,21 @@ main {
   line-height: 15.84px;
   text-align: center;
   color: #121212;
+}
+.tarifs .container .tarif.standart ul li.not {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.tarifs .container .tarif.standart ul li.not::before {
+  content: " ";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/tarif_not_list_icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  top: 0;
 }
 .tarifs .container .tarif.premium::before {
   border-color: rgba(255, 255, 255, 0.2509803922);
@@ -1369,6 +1384,7 @@ main {
   text-align: left;
   color: #121212;
   text-transform: initial;
+  -webkit-text-indent: 52px;
   text-indent: 52px;
 }
 .question .container .content ul li .title h5::before {
@@ -1407,6 +1423,15 @@ main {
   padding: 0;
   transition: all 0.4s ease-in-out;
 }
+.question .container .content ul li p a {
+  font-family: HelveticaNeueCyr;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18.48px;
+  text-align: left;
+  color: #121212;
+  text-decoration: underline;
+}
 .question .container .content ul li.open p {
   max-height: 600px;
   padding-top: 8px;
@@ -1420,7 +1445,6 @@ main {
 
 .feedback {
   margin-top: 40px;
-  padding-bottom: 60px;
 }
 .feedback .container .content {
   position: relative;
@@ -1493,6 +1517,14 @@ main {
 }
 .feedback .container .content .custom_button {
   margin-top: 24px;
+}
+
+.links {
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+.links .default_button {
+  color: #121212;
 }
 
 .custom_button {

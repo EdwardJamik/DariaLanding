@@ -235,7 +235,7 @@ main {
   justify-content: space-evenly;
 
   & > div {
-    width: 164px;
+    width: 168px;
     height: 64px;
     border-width: 1px;
     border-top: 0;
@@ -889,7 +889,7 @@ main {
                 line-height: 21.6px;
                 text-align: left;
                 color: #121212;
-                margin-top: 24px;
+                margin: 24px 0 0;
               }
 
               & p {
@@ -1091,6 +1091,29 @@ main {
           line-height: 15.84px;
           text-align: center;
           color: #121212;
+        }
+      }
+
+      &.standart {
+        & ul {
+          & li {
+            &.not {
+              opacity: 0.5;
+              text-decoration: line-through;
+
+              &::before {
+                content: " ";
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                background-image: url("../images/tarif_not_list_icon.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                left: 0;
+                top: 0;
+              }
+            }
+          }
         }
       }
 
@@ -1461,6 +1484,7 @@ main {
               text-align: left;
               color: #121212;
               text-transform: initial;
+              -webkit-text-indent: 52px;
               text-indent: 52px;
 
               &::before {
@@ -1505,6 +1529,16 @@ main {
             overflow: hidden;
             padding: 0;
             transition: all 0.4s ease-in-out;
+
+            & a {
+              font-family: HelveticaNeueCyr;
+              font-size: 12px;
+              font-weight: 700;
+              line-height: 18.48px;
+              text-align: left;
+              color: #121212;
+              text-decoration: underline;
+            }
           }
 
           &.open {
@@ -1530,7 +1564,7 @@ main {
 
 .feedback {
   margin-top: 40px;
-  padding-bottom: 60px;
+  // padding-bottom: 60px;
   & .container {
     & .content {
       position: relative;
@@ -1618,6 +1652,15 @@ main {
         margin-top: 24px;
       }
     }
+  }
+}
+
+.links {
+  margin-top: 40px;
+  padding-bottom: 60px;
+
+  & .default_button {
+    color: #121212;
   }
 }
 
